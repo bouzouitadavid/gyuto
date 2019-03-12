@@ -35,7 +35,7 @@ cd site
 
 yarn install 
 yarn add gatsby
-gatsby develop
+yarn gatsby develop
 ```
 Go Develop !
 
