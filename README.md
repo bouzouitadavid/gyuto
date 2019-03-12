@@ -1,6 +1,12 @@
 # Gyuto
 
 ### Instal Guide
+### Strapi
+Install strapi in global  
+[Doc's](https://strapi.io/documentation/3.x.x/getting-started/installation.html#requirements)
+```
+npm install strapi@alpha -g
+```
 #### Strapi (CMS)
 ```
 git clone https://github.com/bouzouitadavid/gyuto
