@@ -18,8 +18,7 @@ module.exports = {
       options: {
         apiURL: 'http://localhost:1337',
         contentTypes: [ // List of the Content Types you want to be able to request from Gatsby.
-          'articles',
-          'albums'
+          'articles'
         ],
         queryLimit: 1000,
       },

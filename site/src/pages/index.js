@@ -8,11 +8,12 @@ const IndexPage = ({ data }) => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <ul>
-      {data.allStrapiAlbums.edges.map(document => (
+      {data.allStrapiArticles.edges.map(document => (
         <li key={document.node.id}>
           <h2>
-            {document.node.titleFr}
+            {document.node.title}
           </h2>
+          <p>{document.node.content}</p>
         </li>
       ))}
     </ul>
@@ -24,11 +25,12 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allStrapiAlbums {
+    allStrapiArticles {
       edges {
         node {
           id
-          titleFr
+          title
+          content
         }
       }
     }
