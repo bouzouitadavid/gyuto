@@ -27,7 +27,7 @@ Add Privilege to Public!
 #### Gatsby (Frameworks)
 ```
 cd site
-sudo apt-get update && sudo apt-get install yarn //if you don't have yarn, install it
+npm i yarn //if you don't have yarn, install it
 yarn install 
 yarn add gatsby
 gatsby develop
