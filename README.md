@@ -1,17 +1,22 @@
 # Gyuto
 
 ### Instal Guide
+### Yarn
+If you don't have yarn, install it with 
+```
+npm i yarn -g
+```
 ### Strapi
 Install strapi in global  
 [Doc's](https://strapi.io/documentation/3.x.x/getting-started/installation.html#requirements)
 ```
-npm install strapi@alpha -g
+npm i strapi@alpha -g
 ```
 #### Strapi (CMS)
 ```
 git clone https://github.com/bouzouitadavid/gyuto
 cd gyuto
-npm install
+yarn install
 strapi start
 ```
 After cloning go to config/environments/development/database.json  
@@ -27,7 +32,7 @@ Add Privilege to Public!
 #### Gatsby (Frameworks)
 ```
 cd site
-npm i yarn -g //if you don't have yarn, install it
+
 yarn install 
 yarn add gatsby
 gatsby develop
