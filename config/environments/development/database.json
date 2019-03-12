@@ -1,0 +1,15 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "client": "mongo",
+        "uri": ""
+      },
+      "options": {
+        "ssl": true
+      }
+    }
+  }
+}
