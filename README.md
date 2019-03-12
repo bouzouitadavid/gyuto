@@ -3,7 +3,7 @@
 ### Instal Guide
 #### Strapi (CMS)
 ```
-git clone https://github.com/bouzouitadavid/gyuto2019
+git clone https://github.com/bouzouitadavid/gyuto
 cd gyuto
 npm install
 strapi start
