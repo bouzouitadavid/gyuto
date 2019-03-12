@@ -1,2 +1,2 @@
 # Database mongo
-config/environments/development/databases.json
+databases.json
