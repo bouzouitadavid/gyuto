@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { newAnim, stop } from "../mandala/functions";
 import { videos } from "../../../data";
-
+import Image from '../../../image';
 import { withNamespaces } from 'react-i18next';
 
 class MandalaLegend extends Component {
@@ -79,6 +79,7 @@ class MandalaLegend extends Component {
     render() {
         return (
             <Fragment>
+              <Image />
                 <ul className="legendMandala">
                     <div id="borderMandala"></div>
                     <li style={{

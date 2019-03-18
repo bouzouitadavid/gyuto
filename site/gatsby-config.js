@@ -2,22 +2,23 @@ module.exports = {
   siteMetadata: {
     title: 'My super blog',
     description: 'Gatsby blog with Strapi',
-    author: 'Strapi team'
+    author: 'Strapi team',
+    pathPrefix: `/site`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    { // Assets
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
+      },
+    },
     { // Data folder
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
         path: `${__dirname}/src/data`,
-      },
-    },
-      { // test markdown
-        resolve: `gatsby-source-filesystem`,
-        options: {
-          path: `${__dirname}/src/components`,
-          name: "markdown-pages",
       },
     },
       `gatsby-transformer-remark`,
