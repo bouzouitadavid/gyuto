@@ -1,3 +1,4 @@
+/* Gatsby DEFAULT FILES for example ! */
 /**
  * Layout component that queries for data
  * with Gatsby's StaticQuery component
@@ -10,6 +11,7 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Img from "./image.js"
 import "./layout.css"
 
 const Layout = ({ children }) => (
@@ -39,6 +41,7 @@ const Layout = ({ children }) => (
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <Img />
           </footer>
         </div>
       </>
