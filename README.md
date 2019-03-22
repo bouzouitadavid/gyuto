@@ -1,7 +1,7 @@
 # Gyuto
 
-### Instal Guide
-#### Strapi
+## Instal Guide
+### Strapi
 Install strapi in global  
 [Doc's](https://strapi.io/documentation/3.x.x/getting-started/installation.html#requirements)
 ```
@@ -17,12 +17,11 @@ strapi start
 If error connecting mongodb  
 => look white_list and mongodb link !
 
-##### Strapi
+##### Admin
 Got to localhost:1337/admin  
 **User** and **Pass** look Ryver!
 
-##### Process
-###### Layout page
+##### Layout page
 Click add Layout page, remember Save!
 Add privilege to Public for all new layout page!
 
