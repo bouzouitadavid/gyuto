@@ -53,7 +53,7 @@ class Mandala extends Component {
 	test(id, event, coords){
 		this.props.getId(id);
 		if (event === "click") {
-			this.props.getVideoUrl(event[id].url.fr);
+			this.props.getVideoUrl(videos[id].url.fr);
 			onClickPoint(this.getCoords.bind(this), coords)
 		}
 	}
