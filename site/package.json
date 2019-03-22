@@ -32,6 +32,7 @@
     "react-flexbox-grid": "^2.1.2",
     "react-helmet": "^5.2.0",
     "react-i18next": "^8.4.0",
+    "react-markdown": "^4.0.6",
     "react-media": "^1.8.0",
     "react-router-dom": "^4.3.1",
     "react-router-page-transition": "^3.1.0",

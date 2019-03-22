@@ -1,0 +1,41 @@
+{
+  "connection": "default",
+  "collectionName": "videos",
+  "info": {
+    "name": "videos",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "json"
+    },
+    "category": {
+      "default": "",
+      "type": "string"
+    },
+    "quote": {
+      "default": "",
+      "type": "json"
+    },
+    "legend": {
+      "default": "",
+      "type": "json"
+    },
+    "url": {
+      "default": "",
+      "type": "json"
+    },
+    "gif": {
+      "default": "",
+      "type": "string"
+    },
+    "duration": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

@@ -14,6 +14,13 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
+    { // Markdown
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown`,
+        name: "markdown-pages",
+      },
+    },
     { // Data folder
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -27,7 +34,8 @@ module.exports = {
       options: {
         apiURL: 'http://localhost:1337',
         contentTypes: [ // List of the Content Types you want to be able to request from Gatsby.
-          'articles'
+          'articles',
+          'videos'
         ],
         queryLimit: 1000,
       },

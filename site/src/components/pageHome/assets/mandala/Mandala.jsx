@@ -1,16 +1,20 @@
 import React, { Component, Fragment } from 'react';
 import { turnRight, newAnim, stop, onClickPoint } from "./functions";
 import { videos, introduction } from "../../../data";
+import { graphql, StaticQuery } from "gatsby";
 
 class Mandala extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
             playedIntroduction: "",
-			coords: "",
-		};
-	}
+      coords: "",
+    };
+
+  }
+
 	componentWillMount(){
+
 		document.getElementById("background").removeEventListener("mouseenter", () => newAnim(videos , this.props.symbole));
 		document.getElementById("border").removeEventListener("mouseenter", () => stop(this.test.bind(this), videos, this.props.symbole));
 		document.body.removeEventListener("load", this.bertrandFiltre(introduction.url));
@@ -49,7 +53,7 @@ class Mandala extends Component {
 	test(id, event, coords){
 		this.props.getId(id);
 		if (event === "click") {
-			this.props.getVideoUrl(videos[id].url.fr);
+			this.props.getVideoUrl(event[id].url.fr);
 			onClickPoint(this.getCoords.bind(this), coords)
 		}
 	}
@@ -63,8 +67,8 @@ class Mandala extends Component {
 			})
 			localStorage.setItem("coords", JSON.stringify(this.state.coords))
 		} else {
-			varcoords = " <circle style='pointer-events: none' fill='red' cx=" + lastCoord[0] + " cy=" + lastCoord[1] + " r='0.95' /> " 
-			+ " <line x1=" + lastCoord[0] + " y1=" + lastCoord[1] + " x2=" + previousCoord[0] + " y2=" + previousCoord[1] + " style='stroke:red ; stroke-width:0.6 ; pointer-events: none'/> " 
+			varcoords = " <circle style='pointer-events: none' fill='red' cx=" + lastCoord[0] + " cy=" + lastCoord[1] + " r='0.95' /> "
+			+ " <line x1=" + lastCoord[0] + " y1=" + lastCoord[1] + " x2=" + previousCoord[0] + " y2=" + previousCoord[1] + " style='stroke:red ; stroke-width:0.6 ; pointer-events: none'/> "
 			+ " <circle style='pointer-events: none' fill='red' cx=" + previousCoord[0] + " cy=" + previousCoord[1] + " r='0.95' /> ";
 			this.setState({
 				coords : this.state.coords + varcoords
@@ -81,10 +85,9 @@ class Mandala extends Component {
             this.props.getVideoUrlIntroduction(id);
         }
 	}
-
 	render(){
 		return (
-	<Fragment>
+<Fragment>
 	<div id="background"></div>
 	<div id="contenair">
 		<div id="border"></div>
@@ -158,7 +161,7 @@ class Mandala extends Component {
 							</g>
 							<g>
 								<path fill="#FFFFFF" d="M219.111,188.801c-0.118-0.08-0.146-0.239-0.065-0.356c0.077-0.12,0.236-0.152,0.354-0.073
-						c0.119,0.08,0.152,0.242,0.075,0.362C219.394,188.853,219.229,188.881,219.111,188.801z" />	
+						c0.119,0.08,0.152,0.242,0.075,0.362C219.394,188.853,219.229,188.881,219.111,188.801z" />
 							</g>
 							<g>
 								<circle fill="#FFFFFF" cx="217.088" cy="191.646" r="0.259" />
@@ -364,7 +367,7 @@ class Mandala extends Component {
 							c-0.109,0.092-0.274,0.079-0.368-0.029S37.991,197.871,38.101,197.779z" />
 							</g>
 							<g>
-								<a id="p9" className="">					
+								<a id="p9" className="">
 									<circle fill="#FFFFFF" className="hoverable" cx="35.923" cy="195.052" r="0.259" />
 								</a>
 							</g>
@@ -7994,9 +7997,7 @@ class Mandala extends Component {
 			</svg>
 		</div>
 	</div>
-	</Fragment>	
-
-
+	</Fragment>
 		);
 	}
 }
