@@ -25,6 +25,7 @@
         top: 7px;
 
         a{
+          border : solid green 2px;
           &:first-child{
             &::after{
               content: "/";

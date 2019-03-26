@@ -282,6 +282,10 @@
   top: 7px;
 }
 
+.menu li:last-child a {
+  border: solid green 2px;
+}
+
 .menu li:last-child a:first-child::after {
   content: "/";
   margin-left: 2px;
@@ -1648,12 +1652,13 @@ a {
 }
 
 a.itemsColor {
-  color: black;
+  color: #f5f5f5;
 }
 
 body {
   min-height: 100vh;
-  background-color: #f5f5f5;
+  color: white;
+  background-color: #000000;
 }
 
 .buttonContainer {
