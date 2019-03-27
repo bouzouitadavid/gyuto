@@ -1,5 +1,32 @@
 @import "./assets/infoIndex/infoIndex";
 
+.infoParentDiv {
+  display: flex;
+  flex-direction: row;
+    .content{ 
+      p{
+        padding: 6vh 0 0 0;
+        font-size: 1rem;
+      }
+      justify-content: center;
+      width:50%;
+}
+      .titles { 
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 25%;
+        a{ 
+          &:active {
+          font-weight: bold;
+          }
+          font-size: 20px;
+          padding: 2.5vh 0 0 0;
+        }
+        
+  }
+}
+/*
 .pageInfo {
   margin-top: 2rem !important;
   padding-bottom: 2rem;
@@ -50,3 +77,4 @@
     }
   }
 }
+*/

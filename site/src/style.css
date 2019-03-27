@@ -1211,55 +1211,103 @@
   width: 100%;
 }
 
+.infoParentDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.infoParentDiv .content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+}
+
+.infoParentDiv .content p {
+  padding: 6vh 0 0 0;
+  font-size: 1rem;
+}
+
+.infoParentDiv .titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  width: 25%;
+}
+
+.infoParentDiv .titles a {
+  font-size: 20px;
+  padding: 2.5vh 0 0 0;
+}
+
+.infoParentDiv .titles a:active {
+  font-weight: bold;
+}
+
+/*
 .pageInfo {
   margin-top: 2rem !important;
   padding-bottom: 2rem;
-  font-family: "Begum W01 Regular", sans-serif;
+  font-family: $font-content;
+
+  @media screen and (max-width: 700px) {
+    margin-top: 50px;
 }
 
-@media screen and (max-width: 700px) {
-  .pageInfo {
-    margin-top: 50px;
+  p{
+      font-size: 0.9rem;
+      // margin-top: 20px;
+      margin-bottom: 20px;
+  }
+
+  p.imgLegend{
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  h5{
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 }
 
-.pageInfo p {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-}
+.InfoMobileCtr{
 
-.pageInfo p.imgLegend {
-  font-size: 0.8rem;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
+  &:first-child{
+    margin-top: 50px;
+  }
 
-.pageInfo h5 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+  .infoContainer{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 
-.InfoMobileCtr:first-child {
-  margin-top: 50px;
-}
+    p{
+      padding-right: 10px;
+      padding-bottom: 10px;
+      font-size: 1rem !important;
+    }
 
-.InfoMobileCtr .infoContainer {
-  margin-right: 0px !important;
-  margin-left: 0px !important;
+    img{
+      padding-right: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 20px
+    }
+  }
 }
-
-.InfoMobileCtr .infoContainer p {
-  padding-right: 10px;
-  padding-bottom: 10px;
-  font-size: 1rem !important;
-}
-
-.InfoMobileCtr .infoContainer img {
-  padding-right: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-}
-
+*/
 .albumContainer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
