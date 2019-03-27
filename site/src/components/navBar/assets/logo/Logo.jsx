@@ -10,7 +10,7 @@ class Logo extends Component {
   }
 
   loadHome(){
-    window.location.href=""; // website logo link
+    window.location.href="/"; // website logo link
 }
 
   render() {

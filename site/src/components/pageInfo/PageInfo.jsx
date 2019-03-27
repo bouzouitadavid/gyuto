@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-
 // import { Helmet } from "react-helmet";
 /*
 import { Row, Col } from "react-flexbox-grid";
@@ -16,7 +15,16 @@ import { graphql, StaticQuery } from 'gatsby'
 class PageInfo extends React.Component {
   constructor(props) {
     super(props);
-    //this.handleClick = this.handleClick.bind(this);
+    this.state = { id: 0 };
+    this.handleClick = this.handleClick.bind(this);
+    console.log(this.state.id)
+
+
+
+  }
+  handleClick(e) {
+    this.setState({id: e.target.id})
+    console.log(this)
   }
 
   //Permet de rechercher tout les titres dans la bases de données
@@ -34,13 +42,8 @@ class PageInfo extends React.Component {
   createContent = (data) => {
     //créer un variable qui va contenir les différents titres
     let content = []
-    content.push(<div> {data.allStrapiArticles.edges[0].node.content} </div>)
+    content.push(<div> {data.allStrapiArticles.edges[this.state.id].node.content} </div>)
     return content
-  }
-
-  handleClick(e) {
-
-    console.log(e.target.id)
   }
 
   render() {
@@ -59,7 +62,7 @@ class PageInfo extends React.Component {
 export default () => (
   <StaticQuery
     query={graphql`
-    query IndexQueryy {
+    query IndexQueryyc {
       allStrapiArticles {
         edges {
           node {
