@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
+
 // import { Helmet } from "react-helmet";
+/*
 import { Row, Col } from "react-flexbox-grid";
 import InfoIndex from "./assets/infoIndex/InfoIndex";
 import InfoText from "./assets/infoText/InfoText";
@@ -7,145 +9,70 @@ import { info } from "../data";
 import ToggleBox from "../toggleBox/ToggleBox";
 import ToggleBoxChild from "../toggleBox/ToggleBoxChild";
 import Media from "react-media";
+*/
 
-import { withNamespaces } from 'react-i18next';
+import { graphql, StaticQuery } from 'gatsby'
 
-
-class PageInfo extends Component {
+class PageInfo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      id: 0
-    };
+    //this.handleClick = this.handleClick.bind(this);
   }
 
-  makeActive = id => {
-    this.setState({
-      id
-    });
-  };
+  //Permet de rechercher tout les titres dans la bases de données
+  createTitle = (data) => {
+    //créer un variable qui va contenir les différents titres
+    let titles = []
+    for (let i = 0; i < (Object.keys(data.allStrapiArticles.edges).length /*Permet d'obtenir le nombre d'objet/d'article */); i++) {
+      //ajoute tout les titres des articles dans le tableau h2
+      titles.push(<h2 onClick={this.handleClick} id={i /*L'id permettra de récupérer le bon contenu */}>{data.allStrapiArticles.edges[i].node.title}</h2>)
+    }
+    return titles
+  }
 
-  componentDidMount() {
-    document.title = this.props.t('nav.info');
+  //Créer le contenu
+  createContent = (data) => {
+    //créer un variable qui va contenir les différents titres
+    let content = []
+    content.push(<div> {data.allStrapiArticles.edges[0].node.content} </div>)
+    return content
+  }
+
+  handleClick(e) {
+
+    console.log(e.target.id)
   }
 
   render() {
     return (
-      <Fragment>
-        <Media
-          query="(max-width: 700px)"
-          render={() =>
-            info.map(inf => {
-              return (
-                <div key={inf.id} className="InfoMobileCtr">
-                  <ToggleBox title={inf.index_title + " " + inf.title.fr} >
-                    <Row className="infoContainer">
-                      {inf.paragraphes.map(para => {
-                        return (
-                          <Col
-                            xs={12}
-                            sm={12}
-                            md={12}
-                            lg={12}
-                            className="infoCol"
-                            key={para.id}
-                          >
-                            <p>{para.text.fr}</p>
-                            {para.galery &&
-                              para.galery.length > 0 &&
-                              para.galery.map(gal => {
-                                return (
-                                  <img
-                                    key={gal.image.id}
-                                    src={gal.image.url}
-                                    alt={gal.image.title.fr}
-                                  />
-                                );
-                              }
-                              )}
-                          </Col>
-                        );
-                      })}
-                    </Row>
-                    {inf.sub_category &&
-                      inf.sub_category.length > 0 &&
-                      inf.sub_category.map(sub => {
-                        return (
-                          <Fragment key={sub.id}>
-                            <ToggleBoxChild title={sub.index_title + " " + sub.title.fr}>
-                              <Row className="infoContainer">
-                                {sub.paragraphes.map(
-                                  para => {
-                                    return (
-                                      <Col
-                                        xs={12}
-                                        sm={12}
-                                        md={12}
-                                        lg={12}
-                                        className="infoCol"
-                                        key={para.id}
-                                      >
-                                        <p>
-                                          {para.text.fr}
-                                        </p>
-                                        {para.galery &&
-                                          para.galery.length > 0 &&
-                                          para.galery.map(
-                                            gal => {
-                                              return (
-                                                <img
-                                                  key={gal.image.id}
-                                                  src={gal.image.url}
-                                                  alt={gal.image.title.fr}
-                                                />
-                                              );
-                                            }
-                                          )}
-                                      </Col>
-                                    );
-                                  }
-                                )}
-                              </Row>
-                              {sub.sub_category &&
-                                sub.sub_category.length > 0 &&
-                                sub.sub_category.map(
-                                  subsub => {
-                                    return (
-                                      <ToggleBoxChild
-                                        key={subsub.id}
-                                        title={subsub.index_title + " " + subsub.title.fr}
-                                      />
-                                    );
-                                  }
-                                )}
-                            </ToggleBoxChild>
-                          </Fragment>
-                        );
-                      })}
-                  </ToggleBox>
-                </div>
-              );
-            })
-          }
-        />
-        <Media
-          query="(min-width: 701px)"
-          render={() => (
-            <Fragment>
-              <Row className="pageInfo">
-                <InfoIndex
-                  info={info}
-                  active={this.makeActive}
-                  id={this.state}
-                />
-                <InfoText info={info} id={this.state} />
-              </Row>
-            </Fragment>
-          )}
-        />
-      </Fragment>
-    );
+      <div>
+        <div>
+          {this.createTitle(this.props.datas)}
+        </div>
+        {this.createContent(this.props.content)}
+      </div>
+    )
   }
 }
 
-export default withNamespaces('common')(PageInfo);
+//query
+export default () => (
+  <StaticQuery
+    query={graphql`
+    query IndexQueryy {
+      allStrapiArticles {
+        edges {
+          node {
+            id
+            title
+            content
+          }
+        }
+      }
+    }
+  `}
+    render={(data) => (
+      <PageInfo datas={data} content={data} />
+    )}
+  />
+)

@@ -11,7 +11,9 @@
   "attributes": {
     "title": {
       "default": "",
-      "type": "json"
+      "type": "json",
+      "type_render": "wysiwyg",
+      "type_mongo": "string"
     },
     "category": {
       "default": "",

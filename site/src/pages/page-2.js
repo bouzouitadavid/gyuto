@@ -12,19 +12,17 @@ const SecondPage = ({ data }) => (
     <p>Welcome to page 2</p>
     <Link to="/">Go back to the homepage</Link>
     {console.log(data)}
+    {console.log(data.allStrapiVideos.edges[1].node.id)}
   </Layout>
 )
 
 export default SecondPage
 export const pageQuery = graphql`
-  query IndexQuerycc {
+  query IndexQuerycccc {
     allStrapiVideos {
       edges {
         node {
-          id,
-          title {
-            fr
-          }
+          id
         }
       }
     }

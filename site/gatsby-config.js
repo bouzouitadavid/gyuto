@@ -3,7 +3,7 @@ module.exports = {
     title: 'My super blog',
     description: 'Gatsby blog with Strapi',
     author: 'Strapi team',
-    pathPrefix: `/site`,
+    pathPrefix: `/site`, // for => withPrefix('/data/images..')
   },
   plugins: [
     'gatsby-plugin-react-helmet',

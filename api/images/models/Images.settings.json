@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "images",
   "info": {
     "name": "images",
     "description": ""
@@ -9,11 +9,17 @@
     "timestamps": true
   },
   "attributes": {
-    "Image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
+    "title": {
+      "default": "",
+      "type": "json"
+    },
+    "galery": {
+      "default": "",
+      "type": "json"
+    },
+    "cover": {
+      "default": "",
+      "type": "string"
     }
   }
 }
