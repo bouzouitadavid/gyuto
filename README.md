@@ -31,7 +31,9 @@ Mise en place de Gatsby et Strapi
 
 ### Structure du repo une fois cloné :
 En premier lieu le dossier "/gyuto/" contient Strapi
+
 Ensuite, "/gyuto/old_site/" contient l'ancienne version du projet
+
 Enfin, "/gyuto/site/" contient le projet version gatsby
 ____________________
 
