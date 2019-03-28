@@ -1,0 +1,133 @@
+.liWrapper {
+  height: 54px;
+  background-color: #fff;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.liContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 48px;
+  border-bottom: 1px solid rgba(14, 22, 34, 0.04);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.liContainer > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 133px;
+}
+
+.liContainer > div:first-child > div:first-child {
+  width: 51px;
+}
+
+.liContainer > div:first-child > div:last-child {
+  width: 82px;
+}
+
+.liContainer > div:nth-child(2) {
+  width: calc(100% - 696px);
+  padding-right: 20px;
+}
+
+.liContainer > div:nth-child(3) {
+  width: calc(100% - 596px);
+}
+
+.liContainer > div:nth-child(4) {
+  width: 184px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.liContainer > div:nth-child(4) > span:after {
+  content: '\f0d8';
+  margin-left: 10px;
+  font-family: 'FontAwesome';
+}
+
+.liContainer > div:nth-child(5) {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100px;
+}
+
+.liContainer > div:nth-child(6) {
+  width: 147px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.liContainer > div:nth-child(7) {
+  width: 116px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.copied {
+  background-color: #FAFAFB;
+}
+
+.copied > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1px;
+  text-align: center;
+  color: #868FA1;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 54px;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+
+.checked {
+  padding-top: 20px;
+  line-height: 54px;
+  position: relative;
+}
+
+.checked > div {
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+  background-color: #2DD210;
+  border: 1px solid rgba(16, 22, 34, 0.1);
+  border-radius: 3px;
+}
+
+.checked > div:after {
+  content: '\f00c';
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 10px;
+  font-family: 'FontAwesome';
+  font-weight: 100;
+  color: #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=styles.css.map */

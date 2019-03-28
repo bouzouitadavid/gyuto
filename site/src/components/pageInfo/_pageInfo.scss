@@ -17,13 +17,12 @@
         align-items: left;
         width: 25%;
         a{ 
-          &:active {
-          font-weight: bold;
-          }
           font-size: 20px;
           padding: 2.5vh 0 0 0;
         }
-        
+        .bold{
+          font-weight: bold;
+        }    
   }
 }
 /*

@@ -1,0 +1,29 @@
+.containerFluid {
+  padding: 18px 30px !important;
+}
+
+.containerFluid > div:first-child {
+  margin-bottom: 11px;
+}
+
+.inputContainer {
+  padding-top: 7px;
+  background-color: #fff;
+}
+
+.inputContainer > div > div {
+  margin-bottom: 0 !important;
+}
+
+.inputContainer > div > div:nth-child(3) {
+  display: none;
+}
+
+.inputContainer > div > label {
+  display: none !important;
+}
+
+.wrapper {
+  padding-top: 3.8rem;
+}
+/*# sourceMappingURL=styles.css.map */

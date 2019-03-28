@@ -1,0 +1,11 @@
+.leftMenu {
+  /* stylelint-ignore */
+  background: #18202E;
+  height: 100vh;
+  width: 24rem;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=styles.css.map */

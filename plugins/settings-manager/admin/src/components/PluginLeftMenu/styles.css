@@ -1,0 +1,10 @@
+.pluginLeftMenu {
+  /* stylelint-disable */
+  min-height: calc(100vh - 6rem);
+  border-radius: 1px;
+  background-color: #F2F3F4;
+  -webkit-box-shadow: inset 0 0 0.2rem 0 rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 0 0.2rem 0 rgba(0, 0, 0, 0.05);
+  padding-top: .4rem;
+}
+/*# sourceMappingURL=styles.css.map */

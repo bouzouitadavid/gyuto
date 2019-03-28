@@ -1,0 +1,83 @@
+.container {
+  /* stylelint-disable */
+  margin: 0 3.2rem 0 1.9rem;
+  padding: 0 1.4rem 0 0rem;
+  border-bottom: 1px solid rgba(14, 22, 34, 0.04);
+  color: #333740;
+  font-size: 1.3rem;
+}
+
+.container > div {
+  padding: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container > div:first-child {
+  padding-left: 1.4rem;
+}
+
+.container > div:last-child {
+  text-align: right;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 7px;
+  font-weight: 600;
+}
+
+.flex > div:first-child {
+  width: 17px;
+  padding-top: 2px;
+}
+
+.flex > div:first-child > i {
+  font-size: 15px;
+}
+
+.flex > div:last-child {
+  width: 80%;
+  margin-left: 54px;
+  padding-left: 7px;
+  text-align: left;
+  font-weight: 500 !important;
+}
+
+.li {
+  margin-top: 0 !important;
+  position: relative;
+  height: 5.4rem;
+  line-height: 5.4rem;
+  cursor: pointer;
+}
+
+.li:hover {
+  background-color: #F7F8F8;
+}
+
+.li div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrapper > div:first-child {
+  text-align: left;
+}
+
+.wrapper > div:nth-of-type(2) {
+  text-align: center;
+}
+
+.wrapper strong {
+  font-weight: 600;
+}
+
+.wrapper b {
+  font-weight: 500;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,24 @@
+.wrapperStyle {
+  margin-top: -13px;
+}
+
+.wrapperStyle > div:not(:first-child) {
+  padding-top: 10px;
+}
+
+.wrapperStyle > div:last-child {
+  margin-bottom: 2px;
+}
+
+.spanStyled {
+  vertical-align: text-top;
+  cursor: pointer;
+}
+
+.spanStyled:after {
+  margin-left: 2px;
+  content: '\f077';
+  font-family: FontAwesome;
+  font-size: 10px;
+}
+/*# sourceMappingURL=wrapperStyles.css.map */

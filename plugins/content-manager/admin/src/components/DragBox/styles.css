@@ -1,0 +1,28 @@
+.dragBox {
+  height: 30px !important;
+  width: 100%;
+  margin-bottom: 6px;
+  -webkit-box-shadow: 0 !important;
+          box-shadow: 0 !important;
+  padding-left: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #E6F0FB !important;
+  line-height: 30px;
+  border: 1px solid #AED4FB !important;
+  border-radius: 2px;
+  color: #007EFF;
+  font-weight: 500;
+}
+
+.dragBox > img {
+  max-width: 8px;
+  margin-right: 10px;
+  margin-top: -1px;
+}
+
+.dragBox > span:last-child {
+  background: #AED4FB;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,17 @@
+/* Import */
+.content {
+  /* stylelint-ignore */
+  background: #FAFAFB;
+  min-height: calc(100vh - 6rem);
+  width: calc(100vw - 24rem);
+  margin-top: 6rem;
+  margin-left: 24rem;
+}
+
+.wrapper {
+  /* stylelint-ignore */
+  background: #FAFAFB;
+  min-height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

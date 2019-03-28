@@ -1,0 +1,126 @@
+.logout {
+  position: relative;
+  min-width: 19rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+.logout > div {
+  height: 6rem;
+  width: 100%;
+  line-height: 5.8rem;
+  z-index: 999;
+}
+
+.logout > div > button {
+  width: 100%;
+  padding-right: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: #333740;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  cursor: pointer;
+  -webkit-transition: background .2s ease-out;
+  transition: background .2s ease-out;
+}
+
+.logout > div > button:hover, .logout > div > button:focus, .logout > div > button:active {
+  color: #333740;
+  background-color: #FAFAFB !important;
+}
+
+.logout > div > button > i {
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+}
+
+.logout > div > button > i[alt="true"] {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.logout:after {
+  position: absolute;
+  right: -1px;
+  top: calc(50% - 10px);
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 20px;
+  border-left: 1px solid #F3F4F4;
+  -webkit-transition: opacity .2s ease-out;
+  transition: opacity .2s ease-out;
+}
+
+.logout:hover:after {
+  opacity: 0;
+}
+
+.dropDownContent {
+  left: auto !important;
+  min-width: 100% !important;
+  margin: 0 !important;
+  padding: 0;
+  line-height: 1.8rem;
+  border: none !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  font-size: 14px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 4px 0px rgba(40, 42, 49, 0.05);
+          box-shadow: 0 1px 4px 0px rgba(40, 42, 49, 0.05);
+}
+
+.dropDownContent:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  width: calc(100% + 1px);
+  height: 3px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(40, 42, 49, 0.16);
+          box-shadow: 0 1px 2px 0 rgba(40, 42, 49, 0.16);
+}
+
+.dropDownContent > button {
+  height: 40px;
+  padding: 0px 15px;
+  line-height: 40px;
+}
+
+.dropDownContent > button:hover, .dropDownContent > button:focus, .dropDownContent > button:active {
+  background-color: #FAFAFB !important;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.dropDownContent > button:first-child {
+  height: 44px;
+  line-height: 48px;
+}
+
+.dropDownContent > button:first-child:hover, .dropDownContent > button:first-child:active {
+  color: #333740;
+}
+
+.dropDownContent > button:not(:first-child) {
+  color: #F75B1D;
+}
+
+.dropDownContent > button:not(:first-child) > i {
+  margin-left: 10px;
+}
+
+.item:active {
+  color: black;
+}
+
+.item:hover {
+  background-color: #FAFAFB !important;
+}
+/*# sourceMappingURL=styles.css.map */

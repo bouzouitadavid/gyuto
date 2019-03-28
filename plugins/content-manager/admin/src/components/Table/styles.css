@@ -1,0 +1,23 @@
+.table {
+  /* stylelint-disable */
+  border-radius: 3px;
+  border-collapse: initial;
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 4px #E3E9F3;
+          box-shadow: 0 2px 4px #E3E9F3;
+  table-layout: fixed;
+}
+
+.table tr, .table th, .table td {
+  border: none;
+  padding: 0;
+}
+
+.table th {
+  padding: 0 25px;
+}
+
+.table td {
+  padding: 0 25px;
+}
+/*# sourceMappingURL=styles.css.map */

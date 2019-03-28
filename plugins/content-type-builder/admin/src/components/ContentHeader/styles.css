@@ -1,0 +1,64 @@
+.contentHeader {
+  /* stylelint-disable */
+  position: relative;
+  margin: 2.3rem 0rem 3.3rem 0rem;
+  font-family: Lato;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title {
+  color: #333740;
+  font-family: Lato;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.title > i {
+  margin-top: 1.1rem;
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: rgba(16, 22, 34, 0.35);
+  cursor: pointer;
+}
+
+.subTitle {
+  margin-top: 0rem;
+  color: #787E8F;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.icoContainer {
+  font-size: 1.2rem;
+  color: rgba(16, 22, 34, 0.35);
+}
+
+.icoContainer > i {
+  margin-left: 1rem;
+}
+
+.buttonContainer {
+  padding-top: .4rem;
+}
+
+.buttonContainer > button:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=styles.css.map */

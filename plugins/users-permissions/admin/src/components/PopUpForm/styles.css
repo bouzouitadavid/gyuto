@@ -1,0 +1,203 @@
+.headerContainer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.6rem 2.9rem 0 2.9rem;
+}
+
+.headerContainer > div {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.modalBody {
+  padding: 2.2rem 1.4rem 0 1.4rem;
+}
+
+.modalFooter {
+  padding: 1.1rem 1rem 2.8rem 1rem;
+  border: none;
+}
+
+.modalFooter > button {
+  height: 3rem;
+  position: relative;
+  border-radius: 0.3rem;
+  text-transform: capitalize;
+  margin-right: 1.8rem;
+  cursor: pointer;
+  font-family: Lato;
+}
+
+.modalFooter > button:focus {
+  outline: 0;
+}
+
+.modalFooter > button > i {
+  margin-right: 1.3rem;
+}
+
+.modalFooter > button:hover::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.3rem;
+  content: '';
+  opacity: 0.1;
+  background: #FFFFFF;
+}
+
+.modalHeader {
+  margin: 0 2.9rem;
+  padding: 1.4rem 0 2.8rem 0;
+  border-bottom: 1px solid #F6F6F6;
+  position: relative;
+}
+
+.modalHeader > button {
+  margin-right: -2.5rem !important;
+  color: #C3C5C8;
+  opacity: 1;
+  font-size: 1.8rem;
+  font-weight: 100;
+  z-index: 999;
+}
+
+.modalHeader > button:hover, .modalHeader > button:focus {
+  color: #C3C5C8;
+  opacity: 1;
+  outline: 0 !important;
+}
+
+.modalHeader > button > span {
+  display: none;
+}
+
+.modalHeader > button:before {
+  -webkit-font-smoothing: antialiased;
+  content: '\F00d';
+  font-family: 'FontAwesome';
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.modalPosition > div {
+  border: none;
+  border-radius: 2px;
+  width: 74.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.primary {
+  height: 3rem;
+  font-family: Lato !important;
+  margin-left: 1.9rem !important;
+  cursor: pointer;
+  font-family: Lato;
+  border: none !important;
+  width: 15rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  border-radius: 3px;
+  background: linear-gradient(315deg, #0097F6 0%, #005EEA 100%);
+  -webkit-font-smoothing: antialiased;
+  color: white !important;
+}
+
+.primary:focus {
+  outline: 0;
+}
+
+.primary:hover, .primary:active {
+  border: none !important;
+  background: linear-gradient(315deg, #0097F6 0%, #005EEA 100%);
+  color: white;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+.saving {
+  margin-top: -1.2rem;
+}
+
+.saving span {
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  font-size: 5rem;
+}
+
+.saving span:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.saving span:nth-child(3) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.secondary {
+  min-width: 100px;
+  font-family: Lato;
+  color: #F64D0A;
+  border: 0.1rem solid #F64D0A;
+  cursor: pointer;
+  background-color: transparent;
+  height: 3rem;
+  color: #F64D0A;
+  border: 0.1rem solid #F64D0A;
+  position: relative;
+  border-radius: 3px;
+}
+
+.secondary:hover, .secondary:active {
+  color: #F64D0A;
+  background-color: white;
+  border: 0.1rem solid #F64D0A;
+}
+
+.separator {
+  width: 100%;
+  margin: 14px 15px 20px 15px;
+  border-bottom: 2px solid #F6F6F6;
+}
+
+.providerDisabled > div:last-child > input:disabled {
+  background-color: #FAFAFB !important;
+}
+/*# sourceMappingURL=styles.css.map */

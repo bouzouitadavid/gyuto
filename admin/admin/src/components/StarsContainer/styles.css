@@ -1,0 +1,19 @@
+.starsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px;
+}
+
+.starsContainer > div {
+  color: #EEA348;
+}
+
+.starsContainer > div > i {
+  margin-right: 2px;
+}
+
+.starsContainer > div:last-child {
+  color: #B3B5B9;
+}
+/*# sourceMappingURL=styles.css.map */

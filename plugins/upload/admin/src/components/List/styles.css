@@ -1,0 +1,59 @@
+.listWrapper {
+  margin-top: 9px;
+  padding: 0;
+}
+
+.listWrapper > div:first-child {
+  margin: 0;
+}
+
+.ulList {
+  width: 100%;
+  padding: 0 !important;
+  list-style: none;
+}
+
+.ulList > li:nth-child(2) {
+  height: 57px;
+}
+
+.ulList > li:nth-child(2) > div {
+  line-height: 54px !important;
+}
+
+.ulList > li {
+  width: 100%;
+  margin-top: 0;
+}
+
+.ulList > li:last-child {
+  -webkit-box-shadow: 0 2px 4px #E3E9F3;
+          box-shadow: 0 2px 4px #E3E9F3;
+}
+
+.ulList > li:last-child > div {
+  border-bottom: 0 !important;
+}
+
+.emptyLiWrapper {
+  height: 54px;
+  background-color: #fff;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.emptyLiWrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */

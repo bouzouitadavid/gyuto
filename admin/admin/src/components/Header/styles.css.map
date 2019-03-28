@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,OAAO,CAAC;EAAE,sBAAsB;EAC9B,KAAK,EAAE,IAAI;EACX,MAAM,ECiBQ,IAAI;EDhBlB,QAAQ,EAAE,KAAK;EACf,OAAO,EAAE,IAAI;EACb,IAAI,ECOY,KAAK;EDLrB,UAAU,EAAG,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC,CAAC,sBAAsB;EAC/C,gBAAgB,ECPV,OAAO;EDSb,WAAW,ECSG,IAAI;CDRnB",
+    "sources": [
+        "styles.scss",
+        "../../styles/variables/variables.scss",
+        "../../styles/variables/variables.bootstrap.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

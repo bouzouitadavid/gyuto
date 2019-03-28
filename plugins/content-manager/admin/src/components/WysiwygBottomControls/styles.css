@@ -1,0 +1,42 @@
+.wysiwygBottomControlsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  width: 100%;
+  padding: 0 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #FAFAFB;
+  line-height: 30px;
+  font-size: 13px;
+  font-family: Lato;
+  border-top: 1px dashed #e3e4e4;
+}
+
+.wysiwygBottomControlsWrapper > div:first-child > span:last-child {
+  font-size: 12px;
+}
+
+.fullScreenWrapper {
+  cursor: pointer;
+}
+
+.fullScreenWrapper:after {
+  content: '\f065';
+  margin-left: 8px;
+  font-family: FontAwesome;
+  font-size: 12px;
+}
+
+.underline {
+  color: #1C5DE7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.dropLabel > input {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */

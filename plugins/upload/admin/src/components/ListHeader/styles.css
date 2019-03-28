@@ -1,0 +1,91 @@
+.listheaderWrapper {
+  height: 30px;
+  background-color: #F3F3F4;
+  color: #333740;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.listHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.listHeader span {
+  letter-spacing: 0.3px;
+}
+
+.listHeader > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 133px;
+}
+
+.listHeader > div:first-child > div:first-child {
+  width: 51px;
+}
+
+.listHeader > div:first-child > div:last-child {
+  width: 82px;
+}
+
+.listHeader > div:nth-child(2) {
+  width: calc(100% - 496px - 221px);
+}
+
+.listHeader > div:nth-child(3) {
+  width: calc(100% - 496px - 148px);
+}
+
+.listHeader > div:nth-child(4) {
+  width: 184px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.listHeader > div:nth-child(5) {
+  width: 100px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.listHeader > div:nth-child(6) {
+  width: 147px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.listHeader > div:nth-child(7) {
+  width: 116px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.icon > span:last-child:after {
+  content: '\f0d8';
+  margin-left: 10px;
+  font-family: 'FontAwesome';
+}
+
+.iconDesc {
+  cursor: pointer;
+}
+
+.iconDesc > span:last-child:after {
+  content: '\f0d7';
+  margin-left: 10px;
+  font-family: 'FontAwesome';
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.supportUsTitle {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.supportUsTitle:after {
+  content: '❤️';
+  margin-left: 7px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=styles.css.map */

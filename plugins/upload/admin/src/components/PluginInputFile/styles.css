@@ -1,0 +1,97 @@
+.isDraging {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.pluginInputFile {
+  position: relative;
+  height: 146px;
+  width: 100%;
+  padding-top: 28px;
+  border: 2px dashed #E3E9F3;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.pluginInputFile > input {
+  display: none;
+}
+
+.pluginInputFile .icon {
+  width: 82px;
+}
+
+.pluginInputFile .icon path {
+  fill: #CCD0DA;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease;
+}
+
+.pluginInputFile:hover {
+  cursor: pointer;
+}
+
+.textWrapper {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #9EA7B8;
+}
+
+.textWrapper u {
+  color: #1C5DE7;
+}
+
+.pluginInputFileHover {
+  background-color: rgba(28, 93, 231, 0.01) !important;
+  border: 2px dashed rgba(28, 93, 231, 0.1) !important;
+}
+
+.underline {
+  color: #1C5DE7;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.quadrat {
+  -webkit-animation: blink 2s linear infinite;
+  animation: blink 2s linear infinite;
+}
+
+.quadrat .icon path {
+  fill: #729BEF;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    fill: transparent;
+    background-color: transparent;
+  }
+  26% {
+    fill: rgba(28, 93, 231, 0.05);
+    background-color: rgba(28, 93, 231, 0.05);
+  }
+  76% {
+    fill: transparent;
+    background-color: transparent;
+  }
+}
+
+@keyframes blink {
+  0% {
+    fill: transparent;
+    background-color: transparent;
+  }
+  26% {
+    fill: rgba(28, 93, 231, 0.05);
+    background-color: rgba(28, 93, 231, 0.05);
+  }
+  76% {
+    fill: transparent;
+    background-color: transparent;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

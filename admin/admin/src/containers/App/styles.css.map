@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;GAIG;AAIH,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,KAAK;CACf",
+    "sources": [
+        "styles.scss",
+        "../../styles/variables/variables.scss",
+        "../../styles/variables/variables.bootstrap.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

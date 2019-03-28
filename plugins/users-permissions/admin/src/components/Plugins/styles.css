@@ -1,0 +1,58 @@
+.plugins {
+  padding-top: 1.8rem;
+}
+
+.pluginsContainer {
+  padding-top: 1.9rem;
+}
+
+.pluginsContainer > div {
+  border-bottom: 1px solid white;
+}
+
+.pluginsContainer > div:last-child {
+  border-bottom: none;
+}
+
+.pluginsContainer > div:not(:first-child) {
+  background: linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(227, 233, 243, 0.54) 100%);
+}
+
+.pluginsContainer > div:not(:first-child) > div {
+  line-height: 5.2rem;
+}
+
+.pluginsContainer > div:not(:first-child) > div:nth-child(2) > div:first-child {
+  min-height: 1.8rem;
+  background: #ffffff;
+}
+
+.headerContainer {
+  padding: 0 28px;
+}
+
+.headerContainer > div:first-child {
+  margin-bottom: 2px;
+  color: #333740;
+  font-family: Lato;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.1rem;
+}
+
+.headerContainer > div:last-child {
+  margin-top: 0rem;
+  color: #787E8F;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.wrapper {
+  margin: 0 -15px;
+  padding: 0;
+}
+
+.pluginsGradient > div:first-child {
+  background: linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(227, 233, 243, 0.54) 100%) !important;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -12,9 +12,9 @@ class PageInfo extends React.Component {
     this.handleClick = this.handleClick.bind(this);
     console.log(this.state.id)
   }
+
   handleClick(e) {
     this.setState({ id: e.target.id })
-    console.log(this)
   }
 
   //Permet de rechercher tout les titres dans la bases de données
@@ -23,7 +23,7 @@ class PageInfo extends React.Component {
     let titles = []
     for (let i = 0; i < (Object.keys(data.allStrapiArticles.edges).length /*Permet d'obtenir le nombre d'objet/d'article */); i++) {
       //ajoute tout les titres des articles dans le tableau h2
-      titles.push(<a onClick={this.handleClick} id={i /*L'id permettra de récupérer le bon contenu */}>{data.allStrapiArticles.edges[i].node.title}</a>)
+      titles.push(<a className={this.state.id == i ? "bold" :  ""} onClick={this.handleClick} id={i /*L'id permettra de récupérer le bon contenu */}>{data.allStrapiArticles.edges[i].node.title}</a>)
     }
     console.log(titles)
     console.log(titles[0].props.children)

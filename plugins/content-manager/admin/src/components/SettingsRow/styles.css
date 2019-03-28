@@ -1,0 +1,45 @@
+.settingsRow {
+  height: 54px;
+  cursor: pointer;
+}
+
+.settingsRow:hover {
+  background-color: #F7F8F8;
+}
+
+.settingsRow > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 53px;
+  margin: 0 28px 0 36px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(14, 22, 34, 0.04);
+  font-size: 13px;
+  color: #333740;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.frame {
+  position: relative;
+  padding-left: 55px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=styles.css.map */

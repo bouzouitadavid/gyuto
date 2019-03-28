@@ -1,0 +1,27 @@
+.leftMenuHeader {
+  /* stylelint-ignore */
+  background: #1C2431;
+  height: 6rem;
+  background: linear-gradient(100deg, #1C5DE7, #1C91E7);
+}
+
+.projectName {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 6rem;
+  vertical-align: middle;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: #ffffff;
+  background-image: url("../../assets/images/logo-strapi.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 3rem;
+}
+
+.leftMenuHeaderLink:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=styles.css.map */

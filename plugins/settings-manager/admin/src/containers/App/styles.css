@@ -1,0 +1,10 @@
+.app {
+  /* stylelint-disable */
+  min-height: calc(100vh - 6rem);
+  background: #fff !important;
+}
+
+.noPadding {
+  padding: 0 !important;
+}
+/*# sourceMappingURL=styles.css.map */

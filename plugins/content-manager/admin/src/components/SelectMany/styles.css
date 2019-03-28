@@ -1,0 +1,182 @@
+.selectMany {
+  /* stylelint-disable */
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+.selectMany label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 3px;
+}
+
+.selectMany label > span {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.selectMany label + div {
+  margin: 3px 0 26px;
+}
+
+.selectMany label + div:focus {
+  outline: none;
+}
+
+.selectMany label + div > div {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-color: #E3E9F3 !important;
+}
+
+.selectMany label + div > div > span:last-of-type span {
+  border-color: #B3B5B9 transparent transparent;
+}
+
+.selectManyUpdate {
+  padding-bottom: 15px !important;
+}
+
+.select {
+  margin-bottom: 0px !important;
+}
+
+.sortableList {
+  overflow: hidden;
+  max-height: 116px;
+  margin-bottom: -9px;
+}
+
+.sortableList > ul {
+  margin: 4px -20px 0;
+  padding: 0 20px !important;
+  list-style: none !important;
+  overflow: auto;
+  max-height: 110px;
+}
+
+.sortableListLong {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0px;
+}
+
+.sortableListLong:after {
+  position: absolute;
+  top: -15px;
+  left: -5px;
+  content: '';
+  display: inline-block;
+  width: calc(100% + 10px);
+  height: 1px;
+  margin-bottom: -25px;
+  -webkit-box-shadow: 0px -2px 4px 0px rgba(227, 233, 243, 0.5);
+          box-shadow: 0px -2px 4px 0px rgba(227, 233, 243, 0.5);
+}
+
+.sortableListItemHover:hover {
+  cursor: pointer;
+}
+
+.sortableListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 27px;
+  background-color: transparent !important;
+}
+
+.sortableListItem:active .dragHandle > span {
+  background: #AED4FB;
+}
+
+.sortableListItem .dragHandle {
+  outline: none;
+  text-decoration: none;
+  margin-top: -1px;
+}
+
+.sortableListItem .dragHandle > span {
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 1px;
+  padding: 0px !important;
+  background: #B3B5B9;
+  overflow: visible !important;
+  -webkit-transition: background .25s ease-out;
+  transition: background .25s ease-out;
+}
+
+.sortableListItem .dragHandle > span:before, .sortableListItem .dragHandle > span:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 1px;
+  background: inherit;
+}
+
+.sortableListItem .dragHandle > span:before {
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+
+.sortableListItem .dragHandle > span:after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.sortableListItem > div span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sortableListItem > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color .25s ease-out;
+  transition: color .25s ease-out;
+}
+
+.sortableListItem > div:first-of-type:hover {
+  color: #007EFF;
+}
+
+.sortableListItem > div:first-of-type:hover .dragHandle > span {
+  background: #007EFF;
+}
+
+.sortableListItem > div:first-of-type span:last-of-type {
+  padding-left: 10px;
+}
+
+.sortableListItem > div:last-of-type {
+  display: inline-block;
+  height: 100%;
+  line-height: 27px;
+  text-align: right;
+  padding-right: 0px;
+}
+
+.sortableListItem > div:last-of-type img {
+  display: inline-block;
+  height: 14px;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1252,7 +1252,7 @@
   padding: 2.5vh 0 0 0;
 }
 
-.infoParentDiv .titles a:active {
+.infoParentDiv .titles .bold {
   font-weight: bold;
 }
 
