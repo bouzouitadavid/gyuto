@@ -14,6 +14,7 @@ Strapi est une couche qui vient se superposer à l'app, qui fait le lien entre l
 - Recréer les pages à partir des différents components (On a tenté de faire une "simple" migration de l'app, mais le projet tel qu'on en a hérité est trop obscur) : reprendre les components 1 par 1 pour simplifier et utiliser les query GraphQL pour injecter les données là où nécessaire
 - Google Analytics (Il y a un plugin gatsby)
 - Page Facebook : Centrer le Page plugin
+- Bouton choix EN/FR : EN par défaut
 
 ____________________
 
