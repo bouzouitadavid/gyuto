@@ -15,7 +15,7 @@ Il faut vérifier les limites d'utilisation de Mongodb Cloud Gratuit de souvenir
 [Pour plus d'info sur le Cloud Atlas](https://www.mongodb.com/cloud/atlas)
 
 #### Outils 
-- Schéma de fonctionnement du site [Schéma du 30 mai 2019](schema-site-30-mai-2019.png)
+- Schéma de fonctionnement du site [Schéma du 30 mai 2019](schema-site-30-mai-2019.png|100)
 - Cloud mongodb [Gyuto](https://cloud.mongodb.com/v2/5c86200da6f2396cd47fa9b4#clusters)
 
 ### Installation du projet 
