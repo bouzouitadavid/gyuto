@@ -1195,7 +1195,7 @@
 }
 
 
-.infoIndex .indexSubtitle {
+.indexSubtitle {
   font-weight: normal;
   padding: 0px 0px 10px 0px;
   padding-left: 1rem;
@@ -1207,13 +1207,20 @@
   padding-left: 2rem;
   font-size: 1rem;
 }
+p {
 
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  font-family: "Begum W01 Medium", sans-serif;
+  line-height:1.3rem;
+}
 .infoIndex .active {
   font-family: "Begum W01 Medium", sans-serif;
 }
 
 .infoContainer img {
-  width: 100%;
+  width:  80%;
+  margin:10px 0 10px;
 }
 
 .pageInfo {
@@ -1239,9 +1246,16 @@
   margin-bottom: 20px;
 }
 
-.pageInfo h5 {
+.pageInfo  {
   font-size: 2rem;
   margin-bottom: 20px;
+}
+
+h5{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: "Begum W01 Regular", sans-serif;
+
 }
 
 .InfoMobileCtr:first-child {
