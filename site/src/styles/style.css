@@ -10,6 +10,9 @@
   src: local("Begum W01 Medium"), url("../assets/fonts/2169035/17ef16de-af2a-4a80-8c34-986fd09346cb.eot?#iefix") format("eot"), url("../assets/fonts/2169035/c52bd02c-0b41-4f39-a147-9a3d6b6566ab.woff2") format("woff2"), url("../assets/fonts/2169035/9f697132-3f27-43b3-9f19-86d661fccace.woff") format("woff"), url("../assets/fonts/2169035/5dc4445d-f87c-4974-9ef8-54eefe8d4e1c.ttf") format("truetype");
 }
 
+.test{
+  color: red;
+}
 .containerFooter {
   position: fixed;
   bottom: 0;
@@ -1179,12 +1182,18 @@
     margin-bottom: 50px;
   }
 }
-
-.infoIndex .indexTitle {
+.indexTitle{
   padding: 5px 0px 5px 0px;
   font-size: 1.2rem;
   font-weight: normal;
 }
+
+.infoIndex {
+  padding: 5px 0px 5px 0px;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
 
 .infoIndex .indexSubtitle {
   font-weight: normal;

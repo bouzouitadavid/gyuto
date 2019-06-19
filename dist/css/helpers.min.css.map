@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,AAAC,CACd,MAAM,CAAE,OAAO,CAChB",
+    "sources": [
+        "../../admin/admin/src/styles/base/helpers.scss"
+    ],
+    "names": [],
+    "file": "helpers.min.css"
+}

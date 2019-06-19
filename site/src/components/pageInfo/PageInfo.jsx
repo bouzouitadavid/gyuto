@@ -1,16 +1,11 @@
 import React, { Component, Fragment } from "react";
-// import { Helmet } from "react-helmet";
-/*
-import { Row, Col } from "react-flexbox-grid";
-import InfoIndex from "./assets/infoIndex/InfoIndex";
-import InfoText from "./assets/infoText/InfoText";
-import { info } from "../data";
-import ToggleBox from "../toggleBox/ToggleBox";
-import ToggleBoxChild from "../toggleBox/ToggleBoxChild";
-import Media from "react-media";
-*/
-
 import { graphql, StaticQuery } from 'gatsby'
+
+
+const ReactDOM = require('react-dom')
+const ReactMarkdown = require('react-markdown')
+
+
 
 class PageInfo extends React.Component {
   constructor(props) {
@@ -18,51 +13,69 @@ class PageInfo extends React.Component {
     this.state = { id: 0 };
     this.handleClick = this.handleClick.bind(this);
     console.log(this.state.id)
-
-
-
   }
+
   handleClick(e) {
-    this.setState({id: e.target.id})
-    console.log(this)
+    this.setState({ id: e.target.id })
   }
 
-  //Permet de rechercher tout les titres dans la bases de données
+  //Permet de rechercher tout les titres dans la bases de données 
+  //data contient tout ce qui est récupérer par la query (voir la partie query)
   createTitle = (data) => {
-    //créer un variable qui va contenir les différents titres
+    //créer un tableau qui va contenir les différents titres
     let titles = []
     for (let i = 0; i < (Object.keys(data.allStrapiArticles.edges).length /*Permet d'obtenir le nombre d'objet/d'article */); i++) {
-      //ajoute tout les titres des articles dans le tableau h2
-      titles.push(<h2 onClick={this.handleClick} id={i /*L'id permettra de récupérer le bon contenu */}>{data.allStrapiArticles.edges[i].node.title}</h2>)
+      //ajoute tout les titres des articles dans le tableau
+      titles.push(<h2><a className={this.state.id == i ? "indexTitle active" :  "indexTitle"} onClick={this.handleClick} id={i /*L'id permettra de récupérer le bon contenu */}>{data.allStrapiArticles.edges[i].node.title}</a></h2>)
     }
     return titles
   }
 
   //Créer le contenu
   createContent = (data) => {
-    //créer un variable qui va contenir les différents titres
-    let content = []
-    content.push(<div> {data.allStrapiArticles.edges[this.state.id].node.content} </div>)
-    return content
+    //grâce au state.id, il récupère l'information correspondante au titre sur lequel on clique. 
+    //retourne le contenu
+    return data.allStrapiArticles.edges[this.state.id].node.content
   }
 
+
   render() {
+    //contient le contenu de l'article qui est sous forme de markdown
+    const markdown = this.createContent(this.props.content);
     return (
-      <div>
-        <div>
-          {this.createTitle(this.props.datas)}
-        </div>
-        {this.createContent(this.props.content)}
-      </div>
+        <Fragment>
+          <div className="infoParentDiv row">
+            <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 infoIndex">
+              <div className="titles">
+                {this.createTitle(this.props.datas) /*ce props envoie les données dans la méthode createTitle qui comme son nom l'indique crée les titres*/}
+              </div>
+            </div>
+            <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+              <div className="infoContainer row">
+                <div className="content">
+                <ReactMarkdown
+                  //transforme le markdown en html *VeryNice*
+                  source={markdown}
+                  escapeHtml={false}
+                />
+                </div>
+              </div>
+            </div>
+          </div>
+      </Fragment>
     )
   }
 }
-
-//query
+///////////////////////
+//Query 
+//Permet de récupérer les infos de la base de données
+//allStrapiArticles ---> permet de séléctionner le contenu des articles 
+// l'id, le title et le content des articles sont récupérés
+// toute les infos sont stocké dans data 
 export default () => (
   <StaticQuery
     query={graphql`
-    query IndexQueryyc {
+    query IndexQuerzrgyyc {
       allStrapiArticles {
         edges {
           node {
@@ -75,6 +88,7 @@ export default () => (
     }
   `}
     render={(data) => (
+      //Permet d'injecter en props les informations de la base données dans le compenent PageInfo
       <PageInfo datas={data} content={data} />
     )}
   />

@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../styles/main.scss",
+        "../styles/variables/variables.scss",
+        "../styles/variables/variables.bootstrap.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

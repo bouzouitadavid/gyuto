@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,AAAC,CACZ,UAAU,CAAE,KAAK,CAOlB,AARD,AAEE,aAFW,CAET,GAAG,AAAA,IAAK,CAAA,YAAY,CAAE,CACtB,WAAW,CAAE,IAAI,CAClB,AAJH,AAKE,aALW,CAKT,GAAG,AAAA,WAAW,AAAC,CACf,aAAa,CAAE,GAAG,CACnB,AAGH,AAAA,WAAW,AAAC,CACV,cAAc,CAAE,QAAQ,CACxB,MAAM,CAAE,OAAO,CAQhB,AAVD,AAIE,WAJS,AAIR,MAAM,AAAC,CACN,WAAW,CAAE,GAAG,CAChB,OAAO,CAAE,OAAO,CAChB,WAAW,CAAE,WAAW,CACxB,SAAS,CAAE,IAAI,CAChB",
+    "sources": [
+        "../../plugins/content-manager/admin/src/components/FiltersPickWrapper/wrapperStyles.scss"
+    ],
+    "names": [],
+    "file": "wrapperStyles.min.css"
+}

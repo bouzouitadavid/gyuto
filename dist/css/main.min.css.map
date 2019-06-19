@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../plugins/content-manager/admin/src/styles/main.scss",
+        "../../plugins/content-manager/admin/src/styles/variables/variables.scss",
+        "../../plugins/content-manager/admin/src/styles/variables/variables.bootstrap.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}
