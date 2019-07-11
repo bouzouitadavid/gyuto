@@ -1202,6 +1202,10 @@
   font-size: 1.1rem;
 }
 
+.content{
+  width: 800px;
+}
+
 .infoIndex .indexSubsubtitle {
   padding: 0px 0px 10px 0px;
   padding-left: 2rem;
@@ -1219,7 +1223,7 @@ p {
 }
 
 .infoContainer img {
-  width:  80%;
+  width:  90%;
   margin:10px 0 10px;
 }
 
@@ -1334,6 +1338,10 @@ h5{
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.musicText{
+  line-height: 1.8  !important;
 }
 
 .musicContainer {

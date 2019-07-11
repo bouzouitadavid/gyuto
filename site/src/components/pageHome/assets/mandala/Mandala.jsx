@@ -122,6 +122,7 @@ class Mandala extends Component {
 									<circle fill="#FFFFFF" className="hoverable" cx="235.631" cy="150.983" r="0.259"/>
 								</a>
 							</g>
+							
 							<g>
 								<path fill="#FFFFFF" d="M234.664,154.872c-0.137-0.037-0.218-0.179-0.179-0.316c0.039-0.137,0.183-0.218,0.32-0.182
 						c0.139,0.037,0.219,0.178,0.18,0.315C234.945,154.828,234.802,154.91,234.664,154.872z" />
@@ -7502,6 +7503,7 @@ class Mandala extends Component {
 					<a id="p77" className="">
 						<circle fill="#FFFFFF" className="hoverable" cx="173.365" cy="96.92" r="0.283" />
 					</a>
+					
 					<circle fill="#FFFFFF" cx="170.531" cy="91.25" r="0.283" />
 					<circle fill="#FFFFFF" cx="173.365" cy="85.581" r="0.283" />
 					<circle fill="#FFFFFF" cx="204.547" cy="139.439" r="0.284" />

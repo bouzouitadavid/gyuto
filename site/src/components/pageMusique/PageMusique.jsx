@@ -6,6 +6,7 @@ import Description from "./assets/description/Description";
 import Albums from "./assets/albums/Albums";
 import Musique from "./assets/musique/Musique";
 import { translate } from 'react-i18next';
+import DescriptionTest from "./assets/description/Description2";
 
 class PageMusique extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class PageMusique extends Component {
           <Col xs={12} sm={12} md={3} lg={3}>
             <Musique musicObject={musicItem} selectAlbum={this.state.selectAlbum} />
           </Col>
+          <DescriptionTest musicObject={musicItem} />
         </Row>
       );
     });
@@ -48,3 +50,4 @@ class PageMusique extends Component {
 }
 
 export default translate('common')(PageMusique);
+

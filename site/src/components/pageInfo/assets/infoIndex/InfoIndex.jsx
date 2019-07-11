@@ -10,21 +10,27 @@ class InfoIndex extends Component {
     toggleElement(name) {
         this.setState({ [name]: !this.state[name] });
     }
+    // HundleClick = el => { (test1)
+    //     this.toggleElement("indexTitle" + el);
+    //     this.props.active(el);
+    //     console.log('test');
+    // }
 
     render() {
         const infos = this.props.info.map(inf => {
             return (
                 <div key={"indexTitle" + inf.id}>
-                    <h2
+                      <h2
                         className={
                             this.props.id.id !== inf.id
                                 ? "indexTitle"
                                 : "indexTitle active"
                         }
+                        // onClick={this.HundleClick(inf.id)} //Boucle infinie ICI (test1)
                         onClick={() => {
                             this.toggleElement("indexTitle" + inf.id);
                             this.props.active(inf.id);
-                        }}
+}}
                     >
                         {inf.index_title} {inf.title.fr}
                         {/* {this.state["indexTitle" + inf.id] === true ? "↑" : "↓"} */}

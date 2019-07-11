@@ -1,8 +1,8 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,eAAe,AAAC,CACd,OAAO,CAAE,SAAS,CACnB,AAED,AAAA,SAAS,AAAC,CACR,UAAU,CAAE,mBAAmB,CAC/B,UAAU,CAAE,kBAAkB,CAC/B",
+    "mappings": "",
     "sources": [
-        "../../plugins/users-permissions/admin/src/containers/HomePage/styles.scss"
+        "../../plugins/email/admin/src/containers/ConfigPage/styles.scss"
     ],
     "names": [],
     "file": "styles.min.css"
